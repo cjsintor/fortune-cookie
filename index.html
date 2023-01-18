@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            $(document).ready(function(){
+                $('img').hover(function(){
+                    var original = $(this).attr('data-alt-src');
+                    var temp = $(this).attr('src');
+                    $(this).attr('src', original);
+                    $(this).attr('data-alt-src', temp);
+                }, function() {
+                    var original = $(this).attr('data-alt-src');
+                    var temp = $(this).attr('src');
+                    $(this).attr('src', original );
+                    $(this).attr('data-alt-src', temp );
+                });
+            }) 
+        </script>
+        <title>Fortune Cookie</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Fortune Cookie</h1>
+            <h3>Directions: Close your eyes then point at this page. Open your eyes and follow the advise your mouse pointer lands on.</h2>
+            <ul>
+                <li><img src="./img/cookie.jpg" data-alt-src="./img/advice1.png"></li>
+                <li><img src="./img/cookie.jpg" data-alt-src="./img/advice2.png"></li>
+                <li><img src="./img/cookie.jpg" data-alt-src="./img/advice3.png"></li>
+                <li><img src="./img/cookie.jpg" data-alt-src="./img/advice4.png"></li>
+                <li><img src="./img/cookie.jpg" data-alt-src="./img/advice5.png"></li>
+                <li><img src="./img/cookie.jpg" data-alt-src="./img/advice6.png"></li>
+            </ul>
+            <ul>
+                <li><img src="./img/cookie.jpg" data-alt-src="./img/advice7.png"></li>
+                <li><img src="./img/cookie.jpg" data-alt-src="./img/advice8.png"></li>
+                <li><img src="./img/cookie.jpg" data-alt-src="./img/advice9.png"></li>
+                <li><img src="./img/cookie.jpg" data-alt-src="./img/advice10.png"></li>
+                <li><img src="./img/cookie.jpg" data-alt-src="./img/advice11.png"></li>
+                <li><img src="./img/cookie.jpg" data-alt-src="./img/advice12.png"></li>
+            </ul>
+            <ul>
+                <li><img src="./img/cookie.jpg" data-alt-src="./img/advice13.png"></li>
+                <li><img src="./img/cookie.jpg" data-alt-src="./img/advice14.png"></li>
+                <li><img src="./img/cookie.jpg" data-alt-src="./img/advice15.png"></li>
+                <li><img src="./img/cookie.jpg" data-alt-src="./img/advice16.png"></li>
+                <li><img src="./img/cookie.jpg" data-alt-src="./img/advice17.png"></li>
+                <li><img src="./img/cookie.jpg" data-alt-src="./img/advice18.png"></li>
+            </ul>
+            <ul>
+                <li><img src="./img/cookie.jpg" data-alt-src="./img/advice19.png"></li>
+                <li><img src="./img/cookie.jpg" data-alt-src="./img/advice20.png"></li>
+                <li><img src="./img/cookie.jpg" data-alt-src="./img/advice21.png"></li>
+                <li><img src="./img/cookie.jpg" data-alt-src="./img/advice22.png"></li>
+                <li><img src="./img/cookie.jpg" data-alt-src="./img/advice23.png"></li>
+                <li><img src="./img/cookie.jpg" data-alt-src="./img/advice24.png"></li>
+            </ul>
+            <ul>
+                <li><img src="./img/cookie.jpg" data-alt-src="./img/advice25.png"></li>
+                <li><img src="./img/cookie.jpg" data-alt-src="./img/advice26.png"></li>
+                <li><img src="./img/cookie.jpg" data-alt-src="./img/advice27.png"></li>
+                <li><img src="./img/cookie.jpg" data-alt-src="./img/advice28.png"></li>
+                <li><img src="./img/cookie.jpg" data-alt-src="./img/advice29.png"></li>
+                <li><img src="./img/cookie.jpg" data-alt-src="./img/advice30.png"></li>
+            </ul>
+        </div>
+    </body>
+</html>
